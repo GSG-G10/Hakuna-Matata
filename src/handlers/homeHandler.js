@@ -1,0 +1,17 @@
+const fs = require('fs');
+const path = require('path');
+
+const homeHandler = (req, res) => {
+  const homePath = path.join(__dirname, '..', '..', 'public', 'index.html');
+  fs.readFile(homePath, (error, data) => {
+    if (error) {
+      res.writeHead(500, { 'Content-Type': 'text/html' });
+      res.end('<h1>Server Error</h1>');
+    } else {
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.end(data);
+    }
+  });
+};
+
+module.exports = homeHandler;

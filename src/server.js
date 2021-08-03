@@ -1,5 +1,6 @@
 const http = require('http');
-require('env2')('.env');
+// eslint-disable-next-line import/no-unresolved
+// require('env2')('.env');
 const router = require('./router');
 
 const server = http.createServer(router);
