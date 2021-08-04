@@ -7,7 +7,6 @@ input.addEventListener('input', () => {
       const data = JSON.parse(xhr.responseText);
 
       const result = data.filter((Element) => Element.startsWith(input.value));
-      console.log(result)
     }
   };
   xhr.open('GET', '/input');
