@@ -1,5 +1,8 @@
+const path = require('path');
+const fs = require('fs');
+
 const homeHandler = require('./handlers/homeHandler');
-const publicHandler = require('./handlers/publicHandler')
+const publicHandler = require('./handlers/publicHandler');
 
 const router = (req, res) => {
   const endPoint = req.url;
