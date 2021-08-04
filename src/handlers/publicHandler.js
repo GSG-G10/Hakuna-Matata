@@ -16,8 +16,8 @@ const publicHandler = (req, res) => {
   const publicPath = path.join(__dirname, '..', '..', endpoint);
   fs.readFile(publicPath, (error, data) => {
     if (error) {
-      res.writeHeader(500, { 'Content-Type': contentType[fileExtention] });
-      res.end('Server Error!');
+      res.writeHeader(500, { 'Content-Type': 'text/html' });
+      res.end('<h1>Server Error!</h1>');
     } else {
       res.writeHeader(200, { 'Content-Type': contentType[fileExtention] });
       res.end(data);
