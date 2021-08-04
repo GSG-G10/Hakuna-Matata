@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../public/style.css" />
-    <title>Hakuna Matata</title>
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../public/style.css" />
+  <title>Hakuna Matata</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div>
       <header class="header">
         <img src="../public/images/logo.png" alt="logo Hakuna Matata" />
       </header>
@@ -17,13 +21,19 @@
           <source src="../public/audio/hakuna-matata_2.mp3" type="audio/mpeg" />
         </audio>
       </section>
+    </div>
+
+    <div>
+      <section class="search-output"></section>
       <section class="search">
         <input type="text" id="input" list="hakuna-search" />
         <datalist id="hakuna-search"></datalist>
       </section>
-      <section class="search-output"></section>
     </div>
-    <script src="../public/xhr.js"></script>
-    <script src="../public/dom.js"></script>
-  </body>
+
+  </div>
+  <script src="../public/xhr.js"></script>
+  <script src="../public/dom.js"></script>
+</body>
+
 </html>
