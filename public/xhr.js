@@ -10,5 +10,3 @@ const requestData = (url, cb) => {
   xhr.open('GET', url);
   xhr.send();
 };
-
-
