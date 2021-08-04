@@ -1,11 +1,11 @@
-# Hakuna-Matata :lion_face: 
-Live link : https://gsg-g10.github.io/Hakuna-Matata/.
+# Hakuna-Matata :lion: 
+#### Live link : https://hakuna-matata5.herokuapp.com/.
 
 Animal search page for animal lovers.
 
 ## Team members :heart: 
- * Nizar Zakout .
- * Raghad Mezied . 
+ * Nizar Zakout.
+ * Raghad Mezied. 
  * Ahmad Omar.
  * Nadia Tamimi.
 
@@ -30,15 +30,18 @@ While you are writing the name of the animal a small list will apeare under the 
 HAVE A NICE JOURNEY :hearts: 
 
 ## Running the project locally: :inbox_tray: 
-
+```
 - git clone https://github.com/GSG-G10/Hakuna-Matata.git
 - cd Hakuna-Matata
 - npm i
 - npm start
+```
 
 ## Tech Stack: :page_with_curl: 
-
+```
 - HTML
 - CSS
 - JavaScript
-
+- NodeJs
+- Unsplash API
+```
