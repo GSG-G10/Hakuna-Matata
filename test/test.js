@@ -40,3 +40,14 @@ test('home route returns a status code of 200 ', (done) => {
     });
 });
 
+test('search route returns a status code of 200 ', (done) => {
+  supertest(router)
+    .get('/input')
+    .expect(200)
+    .expect('Content-Type', /json/)
+    .end((error, res) => {
+      if (error) return done(error);
+      expect(typeof res.body).toBe('object');
+      return done();
+    });
+});
