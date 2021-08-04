@@ -1,11 +1,11 @@
 const http = require('http');
-// eslint-disable-next-line import/no-unresolved
-// require('env2')('.env');
+require('env2')('.env');
 const router = require('./router');
 
+const port = process.env.PORT || 9000;
 const server = http.createServer(router);
-const PORT = process.env.PORT || 9000;
 
-server.listen(PORT, () => {
-  console.log(`server is runing at : http://localhost:${PORT}`);
+server.listen(port, () => {
+  // eslint-disable-next-line no-console
+  console.log(`server is runing at : http://localhost:${port}`);
 });
