@@ -29,7 +29,7 @@ While you are writing the name of the animal a small list will apeare under the 
 
 HAVE A NICE JOURNEY :hearts: 
 
-## Installing the project locally: :inbox_tray: 
+## Running the project locally: :inbox_tray: 
 
 - git clone https://github.com/GSG-G10/Hakuna-Matata.git
 - cd Hakuna-Matata
