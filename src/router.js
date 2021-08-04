@@ -1,8 +1,6 @@
-const path = require('path');
-const fs = require('fs');
-
 const homeHandler = require('./handlers/homeHandler');
 const publicHandler = require('./handlers/publicHandler');
+const searchHandler = require('./handlers/searchHandler');
 
 const router = (req, res) => {
   const endPoint = req.url;
@@ -10,6 +8,8 @@ const router = (req, res) => {
     homeHandler(req, res);
   } else if (endPoint.includes('public')) {
     publicHandler(req, res);
+  } else if (endPoint === '/input') {
+    searchHandler(req, res);
   }
 };
 
