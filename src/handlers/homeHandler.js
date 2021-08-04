@@ -3,7 +3,7 @@ const path = require('path');
 
 const homeHandler = (req, res) => {
   const homePath = path.join(__dirname, '..', '..', 'public', 'index.html');
-  fs.readFile(homePath, (error, data) => {
+  fs.readFile(homePath, 'UTF-8', (error, data) => {
     if (error) {
       res.writeHead(500, { 'Content-Type': 'text/html' });
       res.end('<h1>Server Error</h1>');
