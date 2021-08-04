@@ -31,9 +31,10 @@ HAVE A NICE JOURNEY :hearts:
 
 ## Installing the project locally: :inbox_tray: 
 
-- git clone [Hakuna Matata](https://github.com/GSG-G10/Hakuna-Matata.git)
-- cd AnimeChan
-- go live server
+- git clone https://github.com/GSG-G10/Hakuna-Matata.git
+- cd Hakuna-Matata
+- npm i
+- npm start
 
 ## Tech Stack: :page_with_curl: 
 
