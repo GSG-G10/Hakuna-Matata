@@ -7,6 +7,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: system-ui;
 }
 html {
   background: url(../public/images/4897726.jpg) no-repeat center fixed;
@@ -37,8 +38,8 @@ html {
   transition: all 0.2s;
 }
 .search:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(2px 3px 3px #759004);
+  /* transform: scale(1.1); */
+  /* filter: drop-shadow(2px 3px 3px #759004); */
 }
 audio {
   color: #759004;
@@ -62,14 +63,15 @@ audio::-webkit-media-controls-play-button {
   position: absolute;
 }
 .auto-option {
-  position: absolute;
+  /* position: absolute; */
+  display: block;
 }
 .result-img {
   width: 70%;
   border-radius: 30px;
 }
 .search-output {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   margin-bottom: 10px;

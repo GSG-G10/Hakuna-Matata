@@ -8,6 +8,9 @@ const router = (req, res) => {
     handlers.publicHandler(req, res);
   } else if (endPoint === '/input') {
     handlers.searchHandler(req, res);
+  } else {
+    res.writeHead(404, {"Content-Type" : "text/plain"})
+    res.end("Page Not Found!")
   }
 };
 
