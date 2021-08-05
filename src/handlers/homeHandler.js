@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const homeHandler = (req, res) => {
+const homeHandler = (res) => {
   const homePath = path.join(__dirname, '..', '..', 'public', 'index.html');
   fs.readFile(homePath, 'UTF-8', (error, data) => {
     if (error) {
